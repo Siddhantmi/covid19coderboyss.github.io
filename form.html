@@ -1,30 +1,179 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
 
-        <a href="D:\covid19coderboys.github.io\form.html" target="_blank">Visit W3Schools!</a> 
-    </head>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="formstyle.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="D:\covid19coderboys.github.io\favicon.png">
+
+</head>
 <body>
+    
+<!-- header section starts  -->
 
-<h2>HTML Forms</h2>
+<header>
 
-<form action="/action_page.php" style="align-items: center">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
+    <a href="#" class="logo">c<span class="fas fa-virus"></span>ovid-19</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="index.html">home</a></li>
+            <li><a class="protect" href="form.html" target="_blank" rel="noreferrer noopener">Fill form</a></li>
+            <li><a href="#symtoms">symtoms</a></li>
+            <li><a href="#prevent">prevent</a></li>
+            <li><a href="#handwash">handwash</a></li>
+            <li><a href="#spread">spread</a></li>
+            <li><a href="#donation">Donation</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
 
 
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label>
-</form> 
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<section class="home" id="home">
+
+    <div class="content">
+
+        <span>Covid-19</span>
+        <h3>Please provide your informations here</h3>
+
+    </div>
+
+    
+
+</section>
+
+
+
+<!-- home section ends -->
+
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+      <div id="div_id_gender" class="form-group"> <label for="id_gender" class=" requiredField">
+        Gender<span class="asteriskField">*</span> </label> <div class=""> <select name="gender" class="custom-select form-control" required="" id="id_gender"> <option value="" selected="">Select gender</option> <option value="Male">Male</option> <option value="Female">Female</option> <option value="Other">Other</option>
+        </select> </div> </div>
+
+        <div id="div_id_gender" class="form-group"> <label for="id_gender" class=" requiredField">
+            Blood Group<span class="asteriskField">*</span> </label> <div class=""> <select name="gender" class="custom-select form-control" required="" id="id_gender"> <option value="" selected="">Select blood group</option> <option value="o+">o+</option> <option value="o-">o-</option> <option value="A+">A+</option> <option value="A-">A-</option> <option value="B+">B+</option> <option value="B-">B-</option><option value="AB+">AB+</option> <option value="AB-">AB-</option> 
+            </select> </div> </div>
+    
+        <!--Country-->
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="India">India</option>
+      </select>
+
+       <!--state-->
+       <label for="State">State</label>
+       <select id="State" name="State">
+         <option value="Utter Pradesh">Utter Pradesh</option>
+         <option value="MAdhya Pradesh">MAdhya Pradesh</option>
+         <option value="Punjab">Punjab</option>
+
+       </select>
+
+     
+
+  
+      <label for="What will you like to donate ">What will you like to donate </label>
+      <textarea id="What will you like to donate" name="What will you like to donate" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>This website is developed by team coder boys to make people aware about covid and to  make them know about the remedies of corona.</p>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">russia</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+            <a href="#">africa</a>
+            <a href="#">spain</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">protect</a>
+            <a href="#">symtoms</a>
+            <a href="#">prevent</a>
+            <a href="#">handwash</a>
+            <a href="#">Donation</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> 7459939492</p>
+            <p> <i class="fas fa-envelope"></i> siddhantmishrabusy949@gmail.com </p>
+            <p> <i class="fas fa-map-marker-alt"></i> Jhansi, india-284001 </p>
+            <div class="share">
+                <a href="https://github.com/Siddhantmi" target="_blank" rel="noreferrer noopener" class="fab fa-github" ></a>
+                <a href="https://www.facebook.com/siddhantmishra949/" target="_blank" rel="noreferrer noopener" class="fab fa-facebook-f"></a>
+                <a href="https://www.linkedin.com/in/siddhant-mishra-a97a36200/" target="_blank" rel="noreferrer noopener" class="fab fa-linkedin-in"></a>
+                <a href="https://www.instagram.com/siddhant_mi/" target="_blank" rel="noreferrer noopener" class="fab fa-instagram"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener" class="fab fa-whatsapp"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#"> CODER BOYS </a> all rights reserved! </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- scroll top  -->
+
+<a href="#home" class="scroll-top">
+    <img src="" alt="D:\covid19 website\scroll-img.png">
+</a>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
