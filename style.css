@@ -167,7 +167,7 @@ header{
 }
 
 
-
+/*slider*/
 
 .carousel-item {
     
@@ -179,6 +179,23 @@ header{
     -o-background-size: cover;
     background-size: cover;
   }
+
+  .carousel-indicators .active {
+    background-color: #dc3545;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(14 11 11 / 64%);
+}
 
   .symtoms{
     display: flex;
